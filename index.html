@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+<title>Assignment</title>
+
+    <style>
+        body{
+            margin: 0;
+            
+        }
+        .header{
+            background-image: url("main.jpg");
+            height: 700px;
+        
+            
+        }
+        .main-navbar-wrapper{
+            background-color: black;
+            height: 100px;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: "Arimo", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            color: orangered;
+            text-decoration: none;
+            align-items: center;
+            padding-left: 40px;
+            padding-right: 40px;
+        
+        }
+        
+    
+        .navbar-item{
+            font-size: 15px;
+            font-family: "Arimo", sans-serif;
+            display: inline-block;
+            color: white;
+            margin-left: 10px;
+        
+        }
+        .navbar-item a{
+            text-decoration: none;
+        }
+        .main-section-wrapper{
+            height: 500px;
+            background-color: white;
+        }
+        .main-section-h1{
+            font-size: 30px;
+            font-family: "Arimo", sans-serif;
+            color: orangered;
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 40px;
+            
+        }
+
+        .main-section-h2{
+            font-size: 30px;
+            font-family: "Arimo", sans-serif;
+            color: orangered;
+            text-align: center;
+            align-items: center;
+        
+        }
+        .gallery-1{
+            margin: 7px;
+            margin-bottom: 50px;
+            border: 1px solid none;
+            float: left;
+            width: 225px;
+        
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            
+            
+        }
+
+        .description {
+            font-size: 20px;
+            font-family: "Arimo", sans-serif;
+            color: rgb(65, 64, 64);
+            padding: 15px;
+            text-align: center;
+        }
+        .main-section-para{
+            font-size: 15px;
+            font-family: "Arimo", sans-serif;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-left: 300px;
+            margin-right: 300px;
+
+        }
+        
+        .gallery-2{
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-bottom: 100px;
+            border: 1px solid none;
+            float: left;
+            width: 225px;
+        
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            
+            
+        }
+
+        .description2 {
+            font-size: 20px;
+            font-family: "Arimo", sans-serif;
+            color: rgb(65, 64, 64);
+            padding: 15px;
+            text-align: center;
+        }
+        .column {
+            float: left;
+            padding: 10px;
+        }
+
+        .column1 {
+            width: 25%;
+        }
+        .column2 {
+            width: 25%;
+        }
+
+        .column3 {
+            width: 25%;
+        }
+        .column4 {
+            width: 25%;
+        }
+        .row::after {
+  content: "";
+  display: table;
+  clear: both;
+  
+        }
+        .row{
+            margin-left: 150px;
+            margin-right: 150px;
+            padding-left: 200px;
+            padding-right: 200px;
+            display: inline-block;
+            justify-content: center;
+            text-align: center;
+        }
+        .h2{
+            font-family: "Pacifico", cursive;
+            font-size: 40px;
+        }
+        .para{
+            font-family: "Arimo", sans-serif;
+            font-size: 10px;
+        }
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }}
+  .main-section-3{
+    font-size: 30px;
+            font-family: "Arimo", sans-serif;
+            color: orangered;
+            text-align: center;
+            align-items: center;
+  }
+
+  .card {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: whitesmoke;
+  font-family: "Arimo", sans-serif;
+  
+}
+.heading4{
+    font-size: 20px;
+    color: rgb(86, 174, 233);
+}
+.container-f {
+  border-radius: 5px;
+  background-color: white;
+  padding-left: 390px;
+  margin-top: 50px;
+  
+}
+input[type=text], select, textarea {
+  width: 30%;
+  padding: 12px;
+  border: 3px solid #cfcece;;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: "Arimo", sans-serif;
+
+}
+input[type=checkbox] {
+width: 40%;
+padding: none;
+align-items: center;
+margin-left: 2px;
+display: inline;
+justify-content: center;
+font-family: "Arimo", sans-serif;
+}
+input[type=SIGNIN] {
+width: 40%;
+  background-color: #5b7be1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+input[type=SIGNIN]:hover {
+  background-color: #5b7be1;}
+.container-f1{
+    height: 130px;
+    background-color: #032826;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Arimo", sans-serif; 
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 40px;
+
+}
+.telephone{
+    display: flex;
+    margin-right: 20px;
+    float: left;
+    align-items: center;
+}
+    </style>
+
+</head>
+<body>
+<header class="header">
+<div class="main-navbar-wrapper">
+    <nav class="main-navbar">JAY TOURS</nav>
+    
+        <ul>
+            <li class="navbar-item"><a href="Home">HOME</a></li>
+            <li class="navbar-item"><a href="ABOUT">ABOUT</a></li>
+            <li class="navbar-item"><a href="SERVICES">SERVICES</a></li>
+            <li class="navbar-item"><a href="TESTIMONIALS">TESTIMONIALS</a></li>
+            <li class="navbar-item"><a href="PORTFOLIO">PORTFOLIO</a></li>
+            <li class="navbar-item"><a href="CONTACTS">CONTACTS</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<main class="main-section-wrapper">
+    
+    <div>
+        <h1 class="main-section-h1">TOP DESTINATION</h1>
+
+    </div>
+    <div class="gallery-1">
+        <div class="description">SRI LANKA</div>
+        <a target="blank" href="Sri Lanka.jpg">
+        <img src="Sri Lanka.jpg" alt="Srilsnkssimage" width="225" height="200">
+        </a>
+        
+        
+    </div>
+    <div class="gallery-1">
+        <div class="description">ROME</div>
+        <a target="blank" href="Rome.jpg">
+        <img src="Rome.jpg" alt="romesimage" width="225" height="200">
+        </a>
+        
+        
+    </div>
+    <div class="gallery-1">
+        <div class="description">MALDIVES</div>
+        <a target="blank" href="Maldives.jpg">
+        <img src="Maldives.jpg" alt="maldivesimage" width="225" height="200">
+        </a>
+    
+    </div>
+    <div class="gallery-1">
+        <div class="description">SWITZERLAND</div>
+        <a target="blank" href="Switzerland.jpg">
+        <img src="Switzerland.jpg" alt="switzerlandimage" width="225" height="200">
+        </a>
+        
+        
+    </div>
+    <div class="gallery-1">
+        <div class="description">THAILAND</div>
+        <a target="blank" href="Thailand.jpg">
+        <img src="Thailand.jpg" alt="tailandsimage" width="225" height="200">
+        </a>
+        
+    </div>
+
+
+    <div>
+        <H2 class="main-section-h1">OUR TEAM LEADS</H2>
+
+    </div>
+    <div class="main-section-para">
+        <p>Team work is the ability to work together towards a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results.</p>
+    </div>
+    <div class="gallery-2">
+        
+        <a target="blank" href="Hugo Silva.jpg">
+        <img src="Hugo Silva.jpg" alt="Srilsnkssimage" width="200" height="300">
+        </a>
+        <div class="description2">HUGO SILVA</div>
+        
+    </div>
+    <div class="gallery-2">
+        
+        <a target="blank" href="Imanoli Arias.jpg">
+        <img src="Imanoli Arias.jpg" alt="Hugoimage" width="200" height="300">
+        </a>
+        <div class="description2">IMANOLI ARIAS</div>
+        
+        
+    </div>
+    
+    <div class="gallery-2">
+        
+        <a target="blank" href="Javier Bardem.jpg">
+        <img src="Javier Bardem.jpg" alt="JAVIAIMAGE" width="200" height="300">
+        </a>
+        <div class="description2">JAVIER BARDEM</div>
+    
+    </div>
+
+    <div class="row">
+        <div class="column 1">
+          <h2 class="h2">250 k +</h2>
+          <p class="para">HAPPY CLIENTS</p>
+          
+        </div>
+        <div class="column 2">
+            <h2 class="h2">800</h2>
+            <p class="para">WEEKLY RESERVATIONS</p>
+        
+          </div>
+          
+          <div class="column 3">
+            <h2 class="h2">150</h2>
+            <p class="para">TRAVEL PARTNERS</p>
+          </div>
+
+          <div class="column 4">
+            <h2 class="h2">15</h2>
+            <p class="para">BRANCHES</p>
+          </div>
+        </div>
+
+        <div>
+            <h3 class="main-section-3">OVERHEAD FROM TRAVELERS</h3>
+        </div>
+
+        <div class="card">
+            <div class="container">
+              <h4 class="heading4"><b>Hotel Eucalyptus</b></h4> 
+              <h5 class="heading5">in Greece</h5>
+              <p class="para4">"We booked Hotel Eucalptus through Jay after reading a handful of reviews, and it was easily the best decision we made <a href="...more">...more"</a></p> 
+              <p class="para5"><small>-Joyce from Canada</small></p>
+            </div>
+        </div>
+
+          <div class="card">
+            <div class="container">
+              <h4 class="heading4"><b>Holiday Inn Resort Bata</b></h4> 
+              <h5 class="heading5">in Indonesia</h5>
+              <p class="para4">"Thanks Jay for letting me change room without charge and rebate the difference. Nice staffs Agoda and Holiday Inn!"</p> 
+              <p class="para5"><small>-Andy from Singapore</small></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              <h4 class="heading4"><b>Hotel Granvia Kyoto</b></h4> 
+              <h5 class="heading5">in Japan</h5>
+              <p class="para4">"Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that <a href="...more">...more"</a></p> 
+              <p class="para5"><small>-Diane from the United States</small></p>
+            </div>
+          </div>
+
+          <div>
+            <h6 class="main-section-h1">CONTACT US</h6>
+          </div>
+
+          <div class="container-f">
+            <form action="/action_page.php">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <input type="text" id="lname" name="E-mail" placeholder="E-mail.." style="width: 60%;" >
+              <input type="text" id="lname" name="Phone Number" placeholder="Phone Number.." style="width: 60%;" >
+              <input type="checkbox" onclick="myFunction()">Subcribe to our newsletter
+              <input type="SIGNIN" value="SIGN IN">
+            </form>
+          </div>
+
+
+        <div class="container-f1">
+            <ul>
+                <h1 style="font-size: 12px;"><b>HELP</b></h1>
+                <li style="font-size: 12px;">Help</li>
+                <li style="font-size: 12px;">FAQs</li>
+                <li style="font-size: 12px;">Terms of Use</li>
+            </ul>
+            
+            <ul>
+                <h2 style="font-size: 12px;"><b>ABOUT US</b></h2>
+                <li style="font-size: 12px;">Block</li>
+                <li style="font-size: 12px;">Careers</li>
+            </ul>
+        
+            <ul>
+                <h3 style="font-size: 10px;"><b>DESTINATIONS</b></h3>
+                <li style="font-size: 12px;">Countries</li>
+                <li style="font-size: 12px;">Cities</li>
+            </ul>
+            <ul>
+                <h4 style="font-size: 10px;"><b>PARTNER WITH US</b></h4>
+                <li style="font-size: 12px;">Properties</li>
+                <li style="font-size: 12px;">Affiliates</li>
+            </ul>
+            <nav class="telephone">
+                <i class="fa-solid fa-phone" style="color: orange;"></i>
+                <ul>
+                    <li style="font-size: 12px; text-align: center; padding-left: 20px;">+94112765843</li>
+                    <li style="font-size: 12px; text-align: center; padding-left: 20px;">+94118765438</li>
+                    
+                </ul>
+            </nav>
+        
+        </div>
+
+        <div class="container-f2" style=" height: 30px; background-color: white; color: black;">
+            <p style="font-size: 10px; font-family: Arimo, sans-serif; text-align: center;">copyright@2020-SLIIT WEB DEVELOPMENT - All Right Reserved</p>
+
+        </div>
+</main>
+
+</body>
+</html>
